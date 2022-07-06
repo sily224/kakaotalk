@@ -5,19 +5,22 @@
         <title>kukuotalk</title>
         <style>
             .phone {
-                float:left; padding-right : 5px
+                float: left; padding-right : 5px
+            }
+            .wifi {
+                width: 15px; height: 20px;
             }
             .battery {
-                float:right;
+                float: right; width: 25px
+            }
+            .time {
+                float:right; margin-right: 10px; margin: 0
             }
             .title {
                 clear:both; float:left; margin-top: 10px; margin-bottom: 10px;
             }
             .icone {
                 float:right; margin-top: 10px; margin-bottom: 10px;
-            }
-            .time {
-                float:right; margin-right: 10px
             }
             #i {
                 margin-left:10px;
@@ -55,16 +58,13 @@
         </style>
     </head>
     <body>
-        <div class="phone">KT</div>
-        <div class="phone">
-            <img src="wifi-solid.svg" alt="wifi" width="15px">
+        <div class="top box">
+            <div class="phone kt">KT</div>
+            <img class="phone wifi" src="wifi-solid.svg" alt="wifi">
+            <img class="battery" src="battery-three-quarters-solid.svg" alt="battery">
+            <b class="time">11:11</b>
         </div>
-        <div class="battery">
-            <img src="battery-three-quarters-solid.svg" alt="battery" width="25px">
-        </div>
-        <div class="time"><b>11:11</b></div>
-        <div class="title"><h2 style="margin:0">친구</h2>
-        </div>
+        <h2 class="title">친구</h2>
         <div class="icone">
             <img id="i" src="magnifying-glass-solid.svg" alt="search" width="30">
             <img id="i" src="user-plus-solid.svg" alt="UserPlus" width="30">
